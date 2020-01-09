@@ -3,6 +3,7 @@ channels:
   - defaults
 dependencies:
   - websockify
+  - pip
   - pip:
     - .
     - pygame
