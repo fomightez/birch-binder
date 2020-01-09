@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# ----------Make the BIRCH directory -------------
+cd ~
+mkdir birch
+cd birch
+
+# Get the current BIRCH framework and binary by curl from osf since cannot use FTP from Binder
+curl -L https://osf.io/azwns/download -o framework_3.50.tar.gz
+curl -L https://osf.io/h73zn/download -o bin-linux-x86_64_3.50.tar.gz
+
+# ----------Unpack to BIRCH directory -------------
+# creating directory structure according to http://home.cc.umanitoba.ca/~psgendb/birchadmin/inst.download.html
+gunzip framework_3.50.tar.gz
+tar xvopf framework_3.50.tar
+#create bin directory structure according to http://home.cc.umanitoba.ca/~psgendb/birchadmin/inst.download.html
+gunzip bin-linux-x86_64_3.50.tar.gz
+tar xvopf bin-linux-x86_64_3.50.tar
