@@ -17,6 +17,10 @@ tar xvpf framework_3.50.tar
 gunzip bin-linux-x86_64_3.50.tar.gz
 tar xvpf bin-linux-x86_64_3.50.tar
 
+# According to https://github.com/fomightez/orca-plotly-binderized/blob/master/postBuild , try adjusting permissions to see if get
+# past first few steps when try to run `./birchconfig.sh` in terminal in running desktop session
+chmod 777 ~/birch
+
 #-----------clean up by removing archives----------
 rm framework_3.50.tar
 rm bin-linux-x86_64_3.50.tar
