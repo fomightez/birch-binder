@@ -3,7 +3,6 @@ channels:
   - defaults
 dependencies:
   - websockify
-  - pandas
   - pip
   - pip:
     - .
