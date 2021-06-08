@@ -9,3 +9,5 @@ xubuntu-icon-theme
 default-jre
 default-jdk
 csh
+icedtea-netx
+icedtea-plugin
